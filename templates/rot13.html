@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="post">
+	<h3>Type your text in the box bellow and clique in submit to ROT13</h3>
+	<textarea name="text" rows="10" cols="94" value=%(rot13)s>
+{{rot}}
+</textarea>
+	<br>
+	<button>Submit</button>
+</form>
+{% endblock %}
+
